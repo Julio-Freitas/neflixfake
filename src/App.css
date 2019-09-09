@@ -1,0 +1,105 @@
+body{
+  background-color: #000;
+}
+p, h1{
+  color: #fff;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+  pointer-events: none;
+  padding: 10px;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 24px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/** banner **/
+.banner{
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+}
+.flex-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.flex-wrapper  .movie-single {
+  display: flex;
+  flex: 1 1 200px;
+  color: #fff;
+  margin: 10px 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  padding: 100px 25px;
+  position: relative;
+}
+.flex-wrapper  .movie-single  h1 {
+  color: #fff;
+  text-align: left;
+  text-shadow: 1px 2px 1px #000;
+  margin: 0;
+  position: absolute;
+  top: 0;
+}
+.flex-wrapper .movie-single  p{
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    bottom:0;
+    right:  0;
+}
+
+.flex-wrapper .movie-single:hover{
+  flex: 2 1 378px;
+  transition: 0.5s;
+  box-shadow: -1px -2px 5px #fff;
+  padding: 64px;
+  height: 150px;
+  border-radius: 5px;
+}
+.flex-wrapper .movie-single:hover p{
+  align-self: flex-end;
+  font-size: 15px;
+  font-weight: normal;
+  background: #00000091;
+  text-align: left;
+  padding: 20px;
+  position: absolute;
+  margin: 0;
+}
+.date{
+  font-size: 15px;
+  background: #00000091;
+  padding: 5px 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.description{
+  display: none;
+}
+.show{
+  display: block;
+  transition: 2s;
+}
